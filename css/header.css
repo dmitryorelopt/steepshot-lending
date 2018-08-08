@@ -1,0 +1,20 @@
+header.container {
+    height: 85px;
+}
+
+.logo {
+    position: absolute;
+    width: 72px;
+    height: 40px;
+    bottom: 4px;
+}
+
+.contact-link, .our-project-link  {
+    position: absolute;
+    bottom: 0;
+}
+
+.our-project-link {
+    color: #f0122b;
+
+}
