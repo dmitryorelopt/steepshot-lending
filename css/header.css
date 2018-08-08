@@ -1,5 +1,9 @@
 header.container {
-    height: 85px;
+    height: var(--header-height);
+}
+
+header.container > .row {
+    height: 100%;
 }
 
 .logo {

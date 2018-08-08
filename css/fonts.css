@@ -35,3 +35,9 @@
     font-weight: 500;
     src: local("OpenSans SemiBold"), local("OpenSans-SemiBold"), url('../assets/fonts/OpenSans-SemiBold.woff') format("woff"), url('../assets/fonts/OpenSans-SemiBold.woff2') format("woff2")
 }
+
+@font-face {
+    font-family: Didot-Bold;
+    font-weight: bold;
+    src: local("Didot Bold"), local("Didot-Bold"), url('../assets/fonts/Didot-Bold.woff') format("woff")
+}

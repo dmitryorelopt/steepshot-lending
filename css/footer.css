@@ -1,5 +1,9 @@
 footer.container {
-    height: 88px;
+    height: var(--footer-height);
+}
+
+footer.container > .row {
+    height: 100%;
 }
 
 .value_link {
