@@ -1,0 +1,39 @@
+.index {
+    height: 575px;
+}
+
+.point {
+    height: 20px;
+    background: url("../assets/images/index/place.svg") no-repeat center;
+    background-position-x: calc(100% - 10px);
+}
+
+.location {
+    font: 18px OpenSans-SemiBold;
+    line-height: 1.11;
+    color: #2f2d38;
+}
+
+.title_index {
+    margin-top: 156px;
+    font: 28px OpenSans-Regular;
+    line-height: 1.43;
+    color: #302f39;
+}
+
+.title_index span {
+    font-weight: bold;
+    color: #f0122b;
+    text-transform: uppercase;
+}
+
+.info_index {
+    margin-top: 29px;
+    font: 18px OpenSans-Light;
+    line-height: 1.67;
+    color: #302f39;
+}
+
+.info_index .btn {
+    margin-top: 22px;
+}
