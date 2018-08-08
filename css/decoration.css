@@ -1,0 +1,22 @@
+.circle {
+    --default-cercle-size: 640px;
+    --circle-size: var(--default-cercle-size);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+}
+
+.extra-small-circle.circle {
+    --circle-size: 100px;
+}
+
+.small-circle.circle {
+    --circle-size: 200px;
+}
+
+.middle-circle.circle {
+    --circle-size: 320px;
+}

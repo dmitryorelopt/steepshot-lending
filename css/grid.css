@@ -1,7 +1,7 @@
 .container {
-    width: 1200px;
-    height: 100%;
     position: relative;
+    width: var(--container-width);
+    height: 100%;
     margin: auto;
 }
 

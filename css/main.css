@@ -1,5 +1,7 @@
 @import './fonts.css';
 @import './grid.css';
+@import './decoration.css';
+@import './decoration_description.css';
 @import './header.css';
 @import './footer.css';
 @import './description.css';
@@ -14,6 +16,7 @@
     --header-height: 85px;
     --footer-height: 88px;
     --main-height: calc(100vh - var(--footer-height) - var(--header-height));
+    --container-width: 1200px;
 }
 
 body {

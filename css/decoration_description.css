@@ -1,0 +1,82 @@
+.decoration_description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.decoration_description > div {
+    position: absolute;
+}
+
+.lines {
+    --lines-size: 1276px;
+    width: var(--lines-size);
+    height: var(--lines-size);
+    background: url('../assets/images/lines.svg') no-repeat center;
+    top: calc(50% - var(--lines-size) / 2);
+    left: calc(50% - var(--lines-size) / 2);
+}
+
+.phones {
+    --phones-width: 600px;
+    --phones-height: 820px;
+    width: var(--phones-width);
+    height: var(--phones-height);
+    background: url('../assets/images/description/phones.png') no-repeat center;
+    top: calc(50% - var(--phones-height) / 2 + var(--header-height) / 2);
+    left: calc(50% - var(--phones-width) / 2);
+}
+
+.decoration_description .left-circle {
+    top: calc(50% - var(--circle-size) / 2 + 26px);
+    left: calc((100% - var(--container-width)) / 2 - var(--circle-size));
+}
+
+.decoration_description .top-circle {
+    top: calc(50% - var(--default-cercle-size) / 2);
+    left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size))
+}
+
+.decoration_description .right-circle {
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(100% - var(--circle-size) / 2)
+}
+
+.decoration_description .bottom-circle {
+    left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size));
+    top: calc(50% + 130px);
+}
+
+.fraction {
+    width: 157px;
+    height: 67px;
+    left: calc((100% - var(--container-width)) / 2);
+    top: calc(50% + 320px);
+}
+
+.two {
+    float: left;
+    width: 61px;
+    height: 34px;
+    font: 28px Didot;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slash {
+    color: #a0a0a0;
+}
+
+.three {
+    float: right;
+    color: #a0a0a0;
+    font: 54px Didot;
+}
+
+.many-dots_description {
+    --many-dots-height: 260px;
+    width: 50%;
+    height: var(--many-dots-height);
+    top: calc(50% - var(--many-dots-height) / 2);
+    background: url('../assets/images/many-dots.svg') repeat-x center;
+}
