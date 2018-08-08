@@ -1,0 +1,35 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    font-style: normal;
+    font-weight: normal;
+    src: local("OpenSans Regular"), local("OpenSans-Regular"), url('/assets/fonts/OpenSans-Regular.woff') format("woff"), url('/assets/fonts/OpenSans-Regular.woff2') format("woff2")
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: local("OpenSans Bold"), local("OpenSans-Bold"), url('/assets/fonts/OpenSans-Bold.woff') format("woff"),
+    url('/assets/fonts/OpenSans-Bold.woff2') format("woff2")
+}
+
+@font-face {
+    font-family: OpenSans-Italic;
+    font-style: normal;
+    font-weight: 400;
+    src: local("OpenSans Italic"), local("OpenSans-Italic"), url('/assets/fonts/OpenSans-Italic.woff') format("woff"), url('/assets/fonts/OpenSans-Italic.woff2') format("woff2")
+}
+
+@font-face {
+    font-family: OpenSans-Light;
+    font-style: normal;
+    font-weight: 300;
+    src: local("OpenSans Light"), local("OpenSans-Light"), url('/assets/fonts/OpenSans-Light.woff') format("woff"), url('/assets/fonts/OpenSans-Light.woff2') format("woff2")
+}
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    font-style: normal;
+    font-weight: 500;
+    src: local("OpenSans SemiBold"), local("OpenSans-SemiBold"), url('/assets/fonts/OpenSans-SemiBold.woff') format("woff"), url('/assets/fonts/OpenSans-SemiBold.woff2') format("woff2")
+}
