@@ -1,8 +1,5 @@
 .description {
     --description-height: 355px;
-    --description-margin-top: 0.466666667;
-
-    margin-top: calc((var(--main-height) - var(--description-height)) * var(--description-margin-top));
     height: var(--description-height);
 }
 

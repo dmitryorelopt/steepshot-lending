@@ -17,25 +17,27 @@
     --footer-height: 88px;
     --main-height: calc(100vh - var(--footer-height) - var(--header-height));
     --container-width: 1200px;
+    --main-min-height: 625px;
 }
 
 body {
-    font: 100%/1.5em OpenSans-Regular;
+    position: relative;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
-    max-width: 100vw;
-    max-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main {
     height: var(--main-height);
+    min-height: var(--main-min-height);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title_block {

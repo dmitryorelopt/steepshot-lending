@@ -1,13 +1,3 @@
-.decoration_description {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.decoration_description > div {
-    position: absolute;
-}
-
 .lines {
     --lines-size: 1276px;
     width: var(--lines-size);
