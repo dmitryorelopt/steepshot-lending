@@ -12,6 +12,13 @@
 }
 
 @font-face {
+    font-family: OpenSans-Extrabold;
+    font-weight: 800;
+    src: local("OpenSans Extrabold"), local("OpenSans-Extrabold"), url('../assets/fonts/OpenSans-ExtraBold.woff') format("woff"),
+    url('../assets/fonts/OpenSans-ExtraBold.woff2') format("woff2")
+}
+
+@font-face {
     font-family: OpenSans-Italic;
     font-weight: 400;
     src: local("OpenSans Italic"), local("OpenSans-Italic"), url('../assets/fonts/OpenSans-Italic.woff') format("woff"), url('../assets/fonts/OpenSans-Italic.woff2') format("woff2")

@@ -1,0 +1,25 @@
+footer.container {
+    height: 88px;
+}
+
+.value_link {
+    float: left;
+    font: 26px OpenSans-Extrabold;
+    font-weight: 800;
+    color: #f0122b;
+}
+
+.arrow {
+    width: 80px;
+    height: 36px;
+    background: url('../assets/images/footer/arrow.svg') no-repeat center;
+    float: right;
+}
+
+.hint {
+    text-align: right;
+    font: 13px OpenSans-Regular;
+    line-height: 1.54;
+    color: #302f39;
+    opacity: 0.5;
+}
