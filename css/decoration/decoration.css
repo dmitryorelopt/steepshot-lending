@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.decoration > div, .decoration > div > div {
+.decoration > div {
     position: absolute;
 }
 
@@ -37,4 +37,31 @@
 
 .middle-circle.circle {
     --circle-size: 320px;
+}
+
+
+.fraction {
+    width: 157px;
+    height: 67px;
+    left: calc((100% - var(--container-width)) / 2);
+    top: calc(50% + 320px);
+}
+
+.two {
+    float: left;
+    width: 61px;
+    height: 34px;
+    font: 28px Didot;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slash {
+    color: #a0a0a0;
+}
+
+.three {
+    float: right;
+    color: #a0a0a0;
+    font: 54px Didot;
 }

@@ -17,45 +17,19 @@
     left: calc(50% - var(--phones-width) / 2);
 }
 
-.decoration_description .left-circle {
+.description .left-circle {
     top: calc(50% - var(--circle-size) / 2 + 26px);
     left: calc((100% - var(--container-width)) / 2 - var(--circle-size));
 }
 
-.decoration_description .top-circle {
+.description .top-circle {
     top: calc(50% - var(--default-cercle-size) / 2);
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size))
 }
 
-.decoration_description .bottom-circle {
+.description .bottom-circle {
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size));
     top: calc(50% + 130px);
-}
-
-.fraction {
-    width: 157px;
-    height: 67px;
-    left: calc((100% - var(--container-width)) / 2);
-    top: calc(50% + 320px);
-}
-
-.two {
-    float: left;
-    width: 61px;
-    height: 34px;
-    font: 28px Didot;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slash {
-    color: #a0a0a0;
-}
-
-.three {
-    float: right;
-    color: #a0a0a0;
-    font: 54px Didot;
 }
 
 .many-dots_description {

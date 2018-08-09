@@ -17,6 +17,7 @@ header.container > .row {
 .contact-link, .our-project-link  {
     position: absolute;
     bottom: 0;
+    z-index: 100;
 }
 
 .our-project-link {
