@@ -6,18 +6,6 @@
     height: var(--container-height);
 }
 
-.description_steepshot {
-    margin-top: 17px;
-    padding-bottom: 30px;
-    font: 18px OpenSans-Regular;
-    line-height: 1.67;
-    color: black;
-}
-
-.action_steepshot {
-    margin-top: 22px;
-}
-
 .social-network {
     height: 57px;
     display: flex;

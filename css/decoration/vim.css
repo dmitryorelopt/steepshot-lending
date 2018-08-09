@@ -1,0 +1,38 @@
+.vim .gray-dots {
+    top: calc(50% - var(--gray-dots-height) / 2);
+    left: 50%;
+}
+
+.vim .top-circle {
+    top: calc(50% - 238px);
+    left: calc(50% - 500px);
+}
+
+.vim .bottom-circle {
+    top: calc(50% + 200px);
+    left: calc(50% - 600px);
+}
+
+.vim .left-circle {
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(var(--circle-size) / 2 * -1)
+}
+
+.background-bottom, .background-top {
+    width: 600px;
+    height: 375px;
+}
+
+.background-bottom {
+    background: url('../../assets/images/vim/background-bottom.png') no-repeat -55px -22px;
+    background-size: 710px 487px;
+    bottom: calc(50% - 80px);
+    left: 50%;
+}
+
+.background-top {
+    background: url('../../assets/images/vim/background-top.png') no-repeat -55px -22px;
+    background-size: 710px 487px;
+    bottom: calc(50% - 265px);
+    left: calc(50% - 220px);
+}

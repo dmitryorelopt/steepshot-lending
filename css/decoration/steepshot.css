@@ -32,10 +32,10 @@
     top: calc(50% + 130px);
 }
 
-.gray-dots_steepshot {
-    --many-dots-height: 260px;
+.steepshot .gray-dots {
+    --dots-height: 260px;
     width: 50%;
-    height: var(--many-dots-height);
-    top: calc(50% - var(--many-dots-height) / 2);
+    height: var(--dots-height);
+    top: calc(50% - var(--dots-height) / 2);
     background: url('../../assets/images/gray-dots.svg') repeat-x center;
 }

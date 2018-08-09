@@ -78,6 +78,18 @@ body {
     line-height: 57px;
 }
 
+
+.description_block {
+    margin-top: 16px;
+    font: 18px OpenSans-Regular;
+    line-height: 1.67;
+    color: black;
+}
+
+.action_block {
+    margin-top: 52px;
+}
+
 .link {
     cursor: pointer;
     font: 14px OpenSans-Bold;

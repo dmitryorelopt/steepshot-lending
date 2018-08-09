@@ -65,3 +65,10 @@
     color: #a0a0a0;
     font: 54px Didot;
 }
+
+.gray-dots {
+    --gray-dots-height: 260px;
+    width: 50%;
+    height: var(--gray-dots-height);
+    background: url('../../assets/images/gray-dots.svg') repeat-x center;;
+}
