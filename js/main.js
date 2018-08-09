@@ -6,6 +6,7 @@ const pages = [
 	'current_ditch',
 	'current_contact'
 ];
+const START_INDEX = 3;
 let loading = false;
 let currentIndex = 0;
 
@@ -39,6 +40,8 @@ $window.ready(() => {
 
 		clearBlockAfter(swapTime);
 	});
+
+	swapCurrentBlock(START_INDEX);
 
 });
 
