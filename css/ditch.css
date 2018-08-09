@@ -1,3 +1,7 @@
-.steepshot {
-    --container-height: 355px;
+.ditch {
+    --container-height: 640px;
+}
+
+.ditch .title_block {
+    margin-top: 155px;
 }

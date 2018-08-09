@@ -1,0 +1,35 @@
+.ditch .gray-dots {
+    top: calc(50% - var(--gray-dots-height) / 2);
+    left: 50%;
+}
+
+.background-ditch {
+    width: 700px;
+    height: 438px;
+    object-fit: contain;
+    background: url('../../assets/images/ditch/background.png') no-repeat center;
+    background-size: contain;
+    left: calc(50% - 200px);
+    top: calc(50% - 260px);
+}
+
+.ditch .top-circle {
+    left: calc(50% - 500px);
+    top: calc(50% - 280px);
+}
+
+.ditch .bottom-circle {
+    top: calc(50% + 100px);
+    left: calc(50% + 400px);
+}
+
+.ditch .left-circle {
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(var(--circle-size) / 2 * -1)
+}
+
+.ditch .last-circle {
+    top: calc(50% + 180px);
+    left: calc(50% - 400px);
+
+}
