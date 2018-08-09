@@ -4,10 +4,9 @@ const pages = [
 	'current_steepshot'
 ];
 let loading = false;
-let currentPage = 0;
+let currentIndex = 0;
 
 $window.ready(() => {
-	const main = $('.main');
 	const swapTime = parseInt($(':root').css('--swap-time'), 10);
 
 	$window.resize(function () {
@@ -22,22 +21,48 @@ $window.ready(() => {
 		loading = true;
 
 		if(e.originalEvent.wheelDelta > 0) {
-			if (currentPage > 0) {
-				main.removeClass(pages[currentPage]);
-				currentPage--;
-				main.addClass(pages[currentPage]);
-			}
+			swapCurrentBlock(currentIndex - 1);
 		} else {
-			if (currentPage < pages.length - 1) {
-				main.removeClass(pages[currentPage]);
-				currentPage++;
-				main.addClass(pages[currentPage]);
+			if (!scrollDown()) {
+				clearBlockAfter(100);
+				return;
+			}
+
+			if (swapCurrentBlock(currentIndex + 1)) {
+				$window.scrollTop(0);
+				lockScrollOnMilliseconds(swapTime);
 			}
 		}
 
-		setTimeout(() => {
-			loading = false;
-		}, swapTime)
+		clearBlockAfter(swapTime);
 	});
 
 });
+
+function swapCurrentBlock(nextIndex) {
+	if (nextIndex < 0 || nextIndex > pages.length - 1 || nextIndex === currentIndex) {
+		return false;
+	}
+	const main = $('.main');
+	main.removeClass(pages[currentIndex]);
+	main.addClass(pages[nextIndex]);
+	currentIndex = nextIndex;
+	return true;
+}
+
+function scrollDown() {
+	return $window.scrollTop() === $(document).height() - $window.height()
+}
+
+function clearBlockAfter(milliseconds) {
+	setTimeout(() => {
+		loading = false;
+	}, milliseconds);
+}
+
+function lockScrollOnMilliseconds(milliseconds) {
+	$('html').css('overflow-y', 'hidden');
+	setTimeout(() => {
+		$('html').css('overflow-y', 'auto');
+	}, milliseconds)
+}

@@ -32,7 +32,7 @@
     top: calc(50% + 130px);
 }
 
-.many-dots_steepshot {
+.gray-dots_steepshot {
     --many-dots-height: 260px;
     width: 50%;
     height: var(--many-dots-height);

@@ -24,6 +24,10 @@
     --main-min-height: 625px;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     position: relative;
     color: black;
