@@ -1,3 +1,7 @@
+footer {
+    transition: all var(--swap-time) linear;
+}
+
 footer.container {
     height: var(--footer-height);
 }

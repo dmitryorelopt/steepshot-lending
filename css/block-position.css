@@ -25,3 +25,7 @@
 .current_contact .contact {
     opacity: 1;
 }
+
+.current_contact footer {
+    opacity: 0;
+}
