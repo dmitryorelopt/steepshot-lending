@@ -6,7 +6,7 @@ const pages = [
 	'current_ditch',
 	'current_contact'
 ];
-const START_INDEX = 3;
+const START_INDEX = 4;
 let loading = false;
 let currentIndex = 0;
 

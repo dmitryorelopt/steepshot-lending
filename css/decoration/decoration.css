@@ -72,3 +72,9 @@
     height: var(--gray-dots-height);
     background: url('../../assets/images/gray-dots.svg') repeat-x center;;
 }
+
+.gray_background {
+    width: 50%;
+    height: 100%;
+    background-color: #f5f5f5;
+}

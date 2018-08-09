@@ -1,0 +1,14 @@
+.contact .gray_background {
+    left: calc(50% + var(--container-width) / 2);
+}
+
+.contact .left-circle {
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(var(--circle-size) / 2 * -1)
+}
+
+.contact .gray-dots {
+    height: 525px;
+    left: 50%;
+    top: calc(50% - 262px);
+}
