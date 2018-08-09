@@ -1,6 +1,9 @@
 .description {
-    --description-height: 355px;
-    height: var(--description-height);
+    --container-height: 355px;
+}
+
+.description .container {
+    height: var(--container-height);
 }
 
 .description_description {

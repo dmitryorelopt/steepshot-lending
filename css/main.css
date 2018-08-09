@@ -34,13 +34,28 @@ body {
 }
 
 .main {
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: var(--main-height);
     min-height: var(--main-min-height);
+}
+
+.main > div {
+    position: relative;
+    width: 100vw;
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -50vw;
+}
+
+.main > div .container {
+    height: var(--container-height);
 }
 
 .title_block {
