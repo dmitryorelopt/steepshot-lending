@@ -29,7 +29,12 @@
 .hello {
     width: 796px;
     height: 190px;
-    background: url('../../assets/images/index/hello.svg') no-repeat center;
     left: calc(50% - var(--container-width) / 2);
-    top: calc(50% - 230px)
+    top: calc(50% - 230px);
+    font: 270px OpenSans-Extrabold;
+    color: white;
+}
+
+.hello span {
+    color: #f5f5f5;
 }

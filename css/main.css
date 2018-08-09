@@ -52,6 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     left: -50vw;
+    transition: all 250ms linear;
 }
 
 .main > div .container {
