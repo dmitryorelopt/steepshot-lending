@@ -1,0 +1,15 @@
+.main.current_index > div {
+    left: 50vw;
+}
+
+.main.current_description > div {
+    left: -50vw;
+}
+
+.main.current_index .index {
+    opacity: 1;
+}
+
+.main.current_description .description {
+    opacity: 1;
+}

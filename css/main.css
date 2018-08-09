@@ -1,5 +1,6 @@
 @import './fonts.css';
 @import './grid.css';
+@import './block-position.css';
 @import './decoration/decoration.css';
 @import './decoration/index.css';
 @import './decoration/description.css';
@@ -15,6 +16,7 @@
 }
 
 :root {
+    --swap-time: 450ms;
     --container-width: 1200px;
     --header-height: 85px;
     --footer-height: 88px;
@@ -51,8 +53,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -50vw;
-    transition: all 250ms linear;
+    transition: opacity var(--swap-time) linear;
+    opacity: 0;
 }
 
 .main > div .container {
