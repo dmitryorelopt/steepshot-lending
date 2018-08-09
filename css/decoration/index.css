@@ -9,3 +9,27 @@
     background-color: #f5f5f5;
     right: calc(50% + var(--container-width) * 4 / 12)
 }
+
+.white-dots {
+    width: 350px;
+    height: 260px;
+    background: url('../../assets/images/index/white-dots.svg');
+    left: calc(50% - var(--container-width) / 2 - 150px);
+    top: calc(50% - 170px);
+}
+
+.gray-dots {
+    width: 480px;
+    height: 260px;
+    background: url('../../assets/images/gray-dots.svg');
+    top: calc(50% - 170px);
+    left: calc(50% - var(--container-width) / 2 + 200px);
+}
+
+.hello {
+    width: 796px;
+    height: 190px;
+    background: url('../../assets/images/index/hello.svg') no-repeat center;
+    left: calc(50% - var(--container-width) / 2);
+    top: calc(50% - 230px)
+}

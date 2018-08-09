@@ -27,11 +27,6 @@
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size))
 }
 
-.decoration_description .right-circle {
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(100% - var(--circle-size) / 2)
-}
-
 .decoration_description .bottom-circle {
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size));
     top: calc(50% + 130px);
@@ -68,5 +63,5 @@
     width: 50%;
     height: var(--many-dots-height);
     top: calc(50% - var(--many-dots-height) / 2);
-    background: url('../../assets/images/many-dots.svg') repeat-x center;
+    background: url('../../assets/images/gray-dots.svg') repeat-x center;
 }

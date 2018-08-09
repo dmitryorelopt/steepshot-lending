@@ -20,6 +20,11 @@
     left: calc(50% - var(--circle-size) / 2);
 }
 
+.right-circle {
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(100% - var(--circle-size) / 2)
+}
+
 .extra-small-circle.circle {
     --circle-size: 100px;
 }
