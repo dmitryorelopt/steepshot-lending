@@ -1,5 +1,10 @@
 .index {
-    height: 575px;
+    --container-height: 575px;
+    position: relative;
+}
+
+.index .container {
+    height: var(--container-height);
 }
 
 .point {
