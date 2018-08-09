@@ -9,9 +9,10 @@ const pages = [
 const START_INDEX = 4;
 let loading = false;
 let currentIndex = 0;
+let swapTime = 0;
 
 $window.ready(() => {
-	const swapTime = parseInt($(':root').css('--swap-time'), 10);
+	swapTime = parseInt($(':root').css('--swap-time'), 10);
 
 	$window.resize(function () {
 		window.setTimeout('location.reload()', 200);
@@ -40,8 +41,12 @@ $window.ready(() => {
 
 		clearBlockAfter(swapTime);
 	});
-
 	swapCurrentBlock(START_INDEX);
+
+/*Обработчики кнопок*/
+	$('.contact .btn').click(() => {
+		$('.contact').addClass('show_message');
+	})
 
 });
 
@@ -53,6 +58,7 @@ function swapCurrentBlock(nextIndex) {
 	body.removeClass(pages[currentIndex]);
 	body.addClass(pages[nextIndex]);
 	currentIndex = nextIndex;
+	clearState();
 	return true;
 }
 
@@ -71,4 +77,10 @@ function lockScrollOnMilliseconds(milliseconds) {
 	setTimeout(() => {
 		$('html').css('overflow-y', 'auto');
 	}, milliseconds)
+}
+
+function clearState() {
+	setTimeout(() => {
+		$('.contact').removeClass('show_message');
+	}, swapTime);
 }
