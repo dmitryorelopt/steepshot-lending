@@ -1,9 +1,9 @@
 .decoration {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: calc(var(--container-height) / 2 - 50vh);
-    left: calc(var(--container-width) / 2 - 50vw);
+    width: 100%;
+    height: calc(100% + var(--header-height) + var(--footer-height));
+    top: calc(var(--header-height) * -1);
+    left: 0;
     overflow: hidden;
 }
 
