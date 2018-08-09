@@ -1,27 +1,27 @@
-.main.current_index > div {
+.current_index .main > div {
     left: 200vw;
 }
 
-.main.current_steepshot > div {
+.current_steepshot .main > div {
     left: 100vw;
 }
 
-.main.current_vim > div {
+.current_vim .main > div {
     left: 0;
 }
 
-.main.current_ditch > div {
+.current_ditch .main > div {
     left: -100vw;
 }
 
-.main.current_contact > div {
+.current_contact .main> div {
     left: -200vw;
 }
 
-.main.current_index .index,
-.main.current_steepshot .steepshot,
-.main.current_vim .vim,
-.main.current_ditch .ditch,
-.main.current_contact .contact {
+.current_index .index,
+.current_steepshot .steepshot,
+.current_vim .vim,
+.current_ditch .ditch,
+.current_contact .contact {
     opacity: 1;
 }

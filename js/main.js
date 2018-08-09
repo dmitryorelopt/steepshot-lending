@@ -49,9 +49,9 @@ function swapCurrentBlock(nextIndex) {
 	if (nextIndex < 0 || nextIndex > pages.length - 1 || nextIndex === currentIndex) {
 		return false;
 	}
-	const main = $('.main');
-	main.removeClass(pages[currentIndex]);
-	main.addClass(pages[nextIndex]);
+	const body = $('body');
+	body.removeClass(pages[currentIndex]);
+	body.addClass(pages[nextIndex]);
 	currentIndex = nextIndex;
 	return true;
 }
