@@ -1,7 +1,10 @@
 const $window = $(window);
 const pages = [
 	'current_index',
-	'current_steepshot'
+	'current_steepshot',
+	'current_vim',
+	'current_ditch',
+	'current_contact'
 ];
 let loading = false;
 let currentIndex = 0;
@@ -24,7 +27,7 @@ $window.ready(() => {
 			swapCurrentBlock(currentIndex - 1);
 		} else {
 			if (!scrollDown()) {
-				clearBlockAfter(100);
+				clearBlockAfter(300);
 				return;
 			}
 

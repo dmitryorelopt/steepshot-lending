@@ -4,10 +4,16 @@
 @import './decoration/decoration.css';
 @import './decoration/index.css';
 @import './decoration/steepshot.css';
+@import './decoration/vim.css';
+@import './decoration/ditch.css';
+@import './decoration/contact.css';
 @import './header.css';
 @import './footer.css';
 @import './index.css';
 @import './steepshot.css';
+@import './vim.css';
+@import './ditch.css';
+@import './contact.css';
 
 * {
     margin: 0;
