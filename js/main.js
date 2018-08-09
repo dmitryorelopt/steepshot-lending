@@ -1,7 +1,7 @@
 const $window = $(window);
 const pages = [
 	'current_index',
-	'current_description'
+	'current_steepshot'
 ];
 let loading = false;
 let currentPage = 0;

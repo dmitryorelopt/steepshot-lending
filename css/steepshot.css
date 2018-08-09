@@ -1,12 +1,12 @@
-.description {
+.steepshot {
     --container-height: 355px;
 }
 
-.description .container {
+.steepshot .container {
     height: var(--container-height);
 }
 
-.description_description {
+.description_steepshot {
     margin-top: 17px;
     padding-bottom: 30px;
     font: 18px OpenSans-Regular;
@@ -14,7 +14,7 @@
     color: black;
 }
 
-.action_description {
+.action_steepshot {
     margin-top: 22px;
 }
 

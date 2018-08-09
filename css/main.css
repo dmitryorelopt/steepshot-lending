@@ -3,11 +3,11 @@
 @import './block-position.css';
 @import './decoration/decoration.css';
 @import './decoration/index.css';
-@import './decoration/description.css';
+@import './decoration/steepshot.css';
 @import './header.css';
 @import './footer.css';
 @import './index.css';
-@import './description.css';
+@import './steepshot.css';
 
 * {
     margin: 0;

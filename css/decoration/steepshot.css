@@ -12,27 +12,27 @@
     --phones-height: 820px;
     width: var(--phones-width);
     height: var(--phones-height);
-    background: url('../../assets/images/description/phones.png') no-repeat center;
+    background: url('../../assets/images/steepshot/phones.png') no-repeat center;
     top: calc(50% - var(--phones-height) / 2 + var(--header-height) / 2);
     left: calc(50% - var(--phones-width) / 2);
 }
 
-.description .left-circle {
+.steepshot .left-circle {
     top: calc(50% - var(--circle-size) / 2 + 26px);
     left: calc((100% - var(--container-width)) / 2 - var(--circle-size));
 }
 
-.description .top-circle {
+.steepshot .top-circle {
     top: calc(50% - var(--default-cercle-size) / 2);
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size))
 }
 
-.description .bottom-circle {
+.steepshot .bottom-circle {
     left: calc(100% / 2 + var(--container-width) / 2 - var(--circle-size));
     top: calc(50% + 130px);
 }
 
-.many-dots_description {
+.many-dots_steepshot {
     --many-dots-height: 260px;
     width: 50%;
     height: var(--many-dots-height);
