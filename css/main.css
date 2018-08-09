@@ -53,7 +53,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity var(--swap-time) linear;
+    transition: all var(--swap-time) linear;
     opacity: 0;
 }
 
