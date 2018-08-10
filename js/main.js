@@ -33,10 +33,7 @@ $window.ready(() => {
 				return;
 			}
 
-			if (swapCurrentBlock(currentIndex + 1)) {
-				$window.scrollTop(0);
-				lockScrollOnMilliseconds(swapTime);
-			}
+			swapCurrentBlock(currentIndex + 1);
 		}
 
 		clearBlockAfter(swapTime);
@@ -46,8 +43,19 @@ $window.ready(() => {
 /*Обработчики кнопок*/
 	$('.contact .btn').click(() => {
 		$('.contact').addClass('show_message');
-	})
+	});
 
+	$('.logo').click(() => {
+		swapCurrentBlock(0);
+	});
+
+	$('.our-project-link').click(() => {
+		swapCurrentBlock(1);
+	});
+
+	$('.contact-link, footer .link').click(() => {
+		swapCurrentBlock(4);
+	});
 });
 
 function swapCurrentBlock(nextIndex) {
@@ -59,7 +67,8 @@ function swapCurrentBlock(nextIndex) {
 	body.addClass(pages[nextIndex]);
 	currentIndex = nextIndex;
 	clearState();
-	return true;
+	$window.scrollTop(0);
+	lockScrollOnMilliseconds(swapTime);
 }
 
 function scrollDown() {

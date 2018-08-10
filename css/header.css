@@ -12,6 +12,7 @@ header.container > .row {
     height: 40px;
     bottom: 4px;
     z-index: 100;
+    cursor: pointer;
 }
 
 .contact-link, .our-project-link  {
@@ -20,7 +21,11 @@ header.container > .row {
     z-index: 100;
 }
 
-.our-project-link {
+.current_steepshot .our-project-link {
     color: #f0122b;
 
+}
+
+.current_contact .contact-link {
+    color: #f0122b;
 }

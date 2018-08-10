@@ -93,6 +93,11 @@ body {
 .link {
     cursor: pointer;
     font: 14px OpenSans-Bold;
+    transition: all 200ms linear;
+}
+
+.link:active {
+    color: #f0122b;
 }
 
 .btn {
