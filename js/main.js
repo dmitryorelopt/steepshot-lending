@@ -106,7 +106,7 @@ function swapCurrentBlock(nextIndex) {
 	if (nextIndex < 0 || nextIndex > pages.length - 1 || nextIndex === currentIndex) {
 		return;
 	}
-	if (bodyWidth < 1200) {
+	if (bodyWidth < 1200 && bodyWidth > 0) {
 		let anchor = '.index';
 		switch(nextIndex) {
 			case 1:
@@ -181,6 +181,7 @@ function scrollbarWidth() {
 }
 
 function scrollTo(anchor) {
+	if (!$(anchor).offset()) return;
 	$('html, body').animate({
 		scrollTop: $(anchor).offset().top
 	}, swapTime);

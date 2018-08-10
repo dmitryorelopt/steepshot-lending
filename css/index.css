@@ -40,8 +40,8 @@
 
 @media (max-width: 1199px) {
 
-    .index {
-        padding-bottom: 237px;
+    .main .index {
+        height: calc(1024px - var(--header-height));
     }
 
     .point {
@@ -50,7 +50,7 @@
 
     .location {
         margin-top: 63px;
-        padding-left: 50%;
+        padding-left: 357px;
     }
 
     .title_index {

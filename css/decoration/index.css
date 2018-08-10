@@ -40,9 +40,16 @@
     top: 640px;
     left: calc(50% - 25px);
     background: url('../../assets/images/index/double-comma.svg') no-repeat center;
+    display: none;
 }
 
 @media (max-width: 1199px) {
+
+    .index .decoration {
+        top: calc(var(--header-height) * -1);
+        height: 1024px;
+    }
+
     .white-dots {
         display: none;
     }
@@ -59,23 +66,27 @@
     }
 
     .hello {
-        height: 143px;
-        top: 204px;
+        width: 592px;
+        height: 273px;
         font-size: 200px;
-        line-height: 143px;
         text-align: center;
+        color: #000000;
+        top: 134px;
+        left: calc(50% - 296px);
     }
 
     .hello span {
-        display: inline-block;
-        color: white;
-        top: 0;
+        color: #000000;
     }
 
     .index .gray-dots {
         top: 320px;
         left: 50%;
         width: 50%;
+    }
+
+    .double-comma {
+        display: block;
     }
 
 }

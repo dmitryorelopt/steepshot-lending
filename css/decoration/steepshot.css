@@ -39,3 +39,48 @@
     top: calc(50% - var(--dots-height) / 2);
     background: url('../../assets/images/gray-dots.svg') repeat-x center;
 }
+
+
+@media (max-width: 1199px) {
+    .phones {
+        top: -54px;
+    }
+
+    .steepshot .circle {
+        top: 54px;
+    }
+
+    .steepshot .decoration {
+        height: 100%;
+        top: 0;
+    }
+
+    div.steepshot .top-circle {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+        left: calc(50% - 320px);
+    }
+
+    div.steepshot .right-circle {
+        width: 100px;
+        height: 100px;
+        top: 83px;
+        left: calc(50% + 260px);
+    }
+
+    div.steepshot .bottom-circle {
+        width: 100px;
+        height: 100px;
+        top: calc(50% + 130px);
+        left: calc(50% - 360px);
+    }
+
+    div.steepshot .left-circle {
+        display: none;
+    }
+
+    .steepshot .gray-dots {
+        display: none;
+    }
+}

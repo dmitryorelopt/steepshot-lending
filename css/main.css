@@ -43,6 +43,10 @@
     .action_block .btn {
         margin: 38px auto 0;
     }
+
+    .decoration {
+        overflow: initial;
+    }
 }
 
 * {

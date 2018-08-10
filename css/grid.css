@@ -2,7 +2,7 @@
     position: relative;
     width: var(--container-width);
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .row {
@@ -84,6 +84,6 @@
     }
 
     .main > div div.container {
-        height: auto;
+        height: 100%;
     }
 }

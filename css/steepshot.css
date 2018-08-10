@@ -19,6 +19,10 @@
 
 
 @media (max-width: 1199px) {
+    .main .steepshot {
+        height: 1024px;
+    }
+
     .steepshot .title_block {
         margin-top: 742px ;
     }
@@ -26,6 +30,5 @@
     .social-network {
         display: none;
     }
-
 
 }
