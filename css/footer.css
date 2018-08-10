@@ -31,3 +31,10 @@ footer.container > .row {
     color: #302f39;
     opacity: 0.5;
 }
+
+
+@media (max-width: 1199px) {
+    footer {
+        display: none;
+    }
+}

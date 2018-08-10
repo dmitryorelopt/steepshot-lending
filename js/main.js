@@ -6,18 +6,18 @@ const pages = [
 	'current_ditch',
 	'current_contact'
 ];
-const START_INDEX = 4;
+const START_INDEX = 0;
 let loading = false;
-let currentIndex = 0;
+let currentIndex = -1;
 let swapTime = 0;
+let root;
 
 $window.ready(() => {
-	swapTime = parseInt($(':root').css('--swap-time'), 10);
+	initVariables();
+	/*Обновить переменный при изменении размеров экрана*/
+	$window.resize(initVariables);
 
-	$window.resize(function () {
-		window.setTimeout('location.reload()', 200);
-	});
-
+	/*Обработчик прокрутки колеса мыши*/
 	$window.bind('mousewheel', (e) => {
 		e.stopPropagation();
 		if (loading) {
@@ -25,7 +25,7 @@ $window.ready(() => {
 		}
 		loading = true;
 
-		if(e.originalEvent.wheelDelta > 0) {
+		if (e.originalEvent.wheelDelta > 0) {
 			swapCurrentBlock(currentIndex - 1);
 		} else {
 			if (!scrollDown()) {
@@ -40,7 +40,7 @@ $window.ready(() => {
 	});
 	swapCurrentBlock(START_INDEX);
 
-/*Обработчики кнопок*/
+	/*Обработчики кнопок*/
 	$('.contact .btn').click(() => {
 		$('.contact').addClass('show_message');
 	});
@@ -56,7 +56,38 @@ $window.ready(() => {
 	$('.contact-link, footer .link').click(() => {
 		swapCurrentBlock(4);
 	});
+
+	$('.index .btn').click(() => {
+		swapCurrentBlock(1);
+	});
+
+	$('.steepshot .btn').click(() => {
+		window.open('https://play.google.com/store/apps/details?id=com.droid.steepshot&rdid=com.droid.steepshot');
+	});
+
+	$('.vim .btn').click(() => {
+		window.open('https://vim.steepshot.io/');
+	});
+
+	$('.ditch .btn').click(() => {
+		window.open('https://github.com/Chainers/Ditch');
+	});
 });
+
+function initVariables() {
+	root = $(':root');
+	swapTime = parseInt(root.css('--swap-time'), 10);
+	const bodyWidth = getScreenWidth();
+	if (bodyWidth >= 1200) {
+		root.css('--container-width', '1200px');
+	}
+	if (bodyWidth < 1200 && bodyWidth >= 768) {
+		root.css('--container-width', '768px');
+	}
+	if (bodyWidth < 768) {
+		root.css('--container-width', '320px');
+	}
+}
 
 function swapCurrentBlock(nextIndex) {
 	if (nextIndex < 0 || nextIndex > pages.length - 1 || nextIndex === currentIndex) {
@@ -72,7 +103,7 @@ function swapCurrentBlock(nextIndex) {
 }
 
 function scrollDown() {
-	return $window.scrollTop() === $(document).height() - $window.height()
+	return $window.scrollTop() === $(document).height() - $window.height();
 }
 
 function clearBlockAfter(milliseconds) {
@@ -85,11 +116,31 @@ function lockScrollOnMilliseconds(milliseconds) {
 	$('html').css('overflow-y', 'hidden');
 	setTimeout(() => {
 		$('html').css('overflow-y', 'auto');
-	}, milliseconds)
+	}, milliseconds);
 }
 
 function clearState() {
 	setTimeout(() => {
 		$('.contact').removeClass('show_message');
 	}, swapTime);
+}
+
+function getScreenWidth() {
+	return document.body.clientWidth + ($('body').hasScrollBar() * scrollbarWidth());
+}
+
+$.fn.hasScrollBar = function () {
+	return this.get(0).scrollHeight > this.height() ? 1 : 0;
+};
+
+function scrollbarWidth() {
+	let block = $('<div>').css({'height':'50px','width':'50px'}),
+		indicator = $('<div>').css({'height':'200px'});
+
+	$('body').append(block.append(indicator));
+	let w1 = $('div', block).innerWidth();
+	block.css('overflow-y', 'scroll');
+	let w2 = $('div', block).innerWidth();
+	$(block).remove();
+	return (w1 - w2);
 }

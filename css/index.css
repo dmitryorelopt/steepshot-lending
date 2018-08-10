@@ -37,3 +37,35 @@
 .info_index .btn {
     margin-top: 22px;
 }
+
+@media (max-width: 1199px) {
+    .point {
+        display: none;
+    }
+
+    .location {
+        margin-top: 63px;
+        padding-left: 50%;
+    }
+
+    .title_index {
+        margin: 232px auto 0;
+        width: 680px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .info_index {
+        width: 680px;
+        margin: 49px auto 0;
+    }
+
+    .info_index .col-4 {
+        width: 100%;
+        text-align: center ;
+    }
+
+    .index .btn {
+        margin: 52px auto 0;
+    }
+}

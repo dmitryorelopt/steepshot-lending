@@ -29,3 +29,12 @@ header.container > .row {
 .current_contact .contact-link {
     color: #f0122b;
 }
+
+@media (max-width: 1199px) {
+    header .our-project-link {
+        display: none;
+    }
+    header .contact-link {
+        right: 0;
+    }
+}

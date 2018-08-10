@@ -29,3 +29,11 @@
 .current_contact footer {
     opacity: 0;
 }
+
+
+@media (max-width: 1199px) {
+    .main > div {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+}

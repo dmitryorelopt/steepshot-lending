@@ -33,3 +33,49 @@
     top: calc(50% - 170px);
     left: calc(50% - var(--container-width) / 2 + 200px);
 }
+
+.double-comma {
+    width: 50px;
+    height: 40px;
+    top: 640px;
+    left: calc(50% - 25px);
+    background: url('../../assets/images/index/double-comma.svg') no-repeat center;
+}
+
+@media (max-width: 1199px) {
+    .white-dots {
+        display: none;
+    }
+
+    .index .circle.middle-circle.right-circle {
+        display: none;
+    }
+
+    .index .gray_background {
+        width: 100vw;
+        height: 1024px;
+        top: 0;
+        right: 0;
+    }
+
+    .hello {
+        height: 143px;
+        top: 204px;
+        font-size: 200px;
+        line-height: 143px;
+        text-align: center;
+    }
+
+    .hello span {
+        display: inline-block;
+        color: white;
+        top: 0;
+    }
+
+    .index .gray-dots {
+        top: 320px;
+        left: 50%;
+        width: 50%;
+    }
+
+}

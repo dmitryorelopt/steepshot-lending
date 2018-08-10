@@ -15,6 +15,17 @@
 @import './ditch.css';
 @import './contact.css';
 
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 1199px) {
+    div.main {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
