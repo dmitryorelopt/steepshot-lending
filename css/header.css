@@ -35,6 +35,6 @@ header.container > .row {
         display: none;
     }
     header .contact-link {
-        right: 0;
+        right: 40px;
     }
 }

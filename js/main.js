@@ -24,6 +24,12 @@ $window.ready(() => {
 		if (loading) {
 			return;
 		}
+		if (bodyWidth < 1200) {
+			if ($('html, body').scrollTop() < 3100) {
+				$('.contact').removeClass('show_message');
+			}
+			return;
+		}
 		loading = true;
 
 		if (e.originalEvent.wheelDelta > 0) {
@@ -42,10 +48,6 @@ $window.ready(() => {
 	swapCurrentBlock(START_INDEX);
 
 	/*Обработчики кнопок*/
-	$('.contact .btn').click(() => {
-		$('.contact').addClass('show_message');
-	});
-
 	$('.logo').click(() => {
 		swapCurrentBlock(0);
 	});
@@ -73,6 +75,16 @@ $window.ready(() => {
 	$('.ditch .btn').click(() => {
 		window.open('https://github.com/Chainers/Ditch');
 	});
+
+	$('.contact .btn').click(() => {
+		$('.contact').addClass('show_message');
+	});
+
+	$('.back-to-top span').click(() => {
+		$('html, body').animate({
+			scrollTop: 0
+		}, swapTime);
+	});
 });
 
 function initVariables() {
@@ -95,6 +107,25 @@ function swapCurrentBlock(nextIndex) {
 		return;
 	}
 	if (bodyWidth < 1200) {
+		let anchor = '.index';
+		switch(nextIndex) {
+			case 1:
+				anchor = '.steepshot';
+				break;
+			case 2:
+				anchor = '.vim';
+				break;
+			case 3:
+				anchor = '.ditch';
+				break;
+			case 4:
+				anchor = '.contact';
+				break;
+			default:
+				break;
+		}
+		scrollTo(anchor);
+		clearState();
 		return;
 	}
 	const body = $('body');
@@ -147,4 +178,10 @@ function scrollbarWidth() {
 	let w2 = $('div', block).innerWidth();
 	$(block).remove();
 	return (w1 - w2);
+}
+
+function scrollTo(anchor) {
+	$('html, body').animate({
+		scrollTop: $(anchor).offset().top
+	}, swapTime);
 }
