@@ -14,6 +14,10 @@
 }
 
 @media (max-width: 1199px) {
+    div.main .vim {
+        height: 1024px;
+    }
+
     .marketplace {
         display: none;
     }

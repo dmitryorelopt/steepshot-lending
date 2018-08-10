@@ -36,3 +36,17 @@
     bottom: calc(50% - 265px);
     left: calc(50% - 220px);
 }
+
+@media (max-width: 1199px) {
+    .vim .gray-dots {
+        display: none;
+    }
+
+    .vim .right-circle {
+        display: none;
+    }
+
+    .vim .left-circle {
+        display: none;
+    }
+}
