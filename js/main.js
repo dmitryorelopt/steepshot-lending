@@ -11,6 +11,7 @@ let loading = false;
 let currentIndex = -1;
 let swapTime = 0;
 let root;
+let bodyWidth = 0;
 
 $window.ready(() => {
 	initVariables();
@@ -77,7 +78,7 @@ $window.ready(() => {
 function initVariables() {
 	root = $(':root');
 	swapTime = parseInt(root.css('--swap-time'), 10);
-	const bodyWidth = getScreenWidth();
+	bodyWidth = getScreenWidth();
 	if (bodyWidth >= 1200) {
 		root.css('--container-width', '1200px');
 	}
@@ -91,7 +92,10 @@ function initVariables() {
 
 function swapCurrentBlock(nextIndex) {
 	if (nextIndex < 0 || nextIndex > pages.length - 1 || nextIndex === currentIndex) {
-		return false;
+		return;
+	}
+	if (bodyWidth < 1200) {
+		return;
 	}
 	const body = $('body');
 	body.removeClass(pages[currentIndex]);

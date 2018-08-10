@@ -12,3 +12,13 @@
 .vim .title_block {
     margin-top: 43px;
 }
+
+@media (max-width: 1199px) {
+    .marketplace {
+        display: none;
+    }
+
+    .vim .title_block {
+        margin-top: 812px;
+    }
+}

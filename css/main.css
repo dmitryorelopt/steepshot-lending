@@ -24,6 +24,25 @@
         flex-direction: column;
         height: 100%;
     }
+
+    .title_block {
+        text-align: center;
+    }
+
+    .description_block {
+        width: 680px;
+        margin: 23px auto 0;
+        text-align: center;
+        line-height: 1.44;
+    }
+
+    div.action_block {
+        margin-top: 0;
+    }
+
+    .action_block .btn {
+        margin: 38px auto 0;
+    }
 }
 
 * {

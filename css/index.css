@@ -39,6 +39,11 @@
 }
 
 @media (max-width: 1199px) {
+
+    .index {
+        padding-bottom: 237px;
+    }
+
     .point {
         display: none;
     }

@@ -5,3 +5,13 @@
 .ditch .title_block {
     margin-top: 155px;
 }
+
+@media (max-width: 1199px) {
+    .ditch {
+        padding-bottom: 77px;
+    }
+
+    .ditch .title_block {
+        margin-top: 541px;
+    }
+}
