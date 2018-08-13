@@ -6,7 +6,7 @@ const pages = [
 	'current_ditch',
 	'current_contact'
 ];
-const START_INDEX = 0;
+const START_INDEX = 4;
 let loading = false;
 let currentIndex = -1;
 let swapTime = 0;
@@ -90,7 +90,7 @@ $window.ready(() => {
 			data: JSON.stringify({
 				name: $('.form .name input')[0].value,
 				email: $('.form .email input')[0].value,
-				projet_name: $('.form .project-name input')[0].value,
+				project_name: $('.form .project-name input')[0].value,
 				description: $('.form .description-project textarea')[0].value,
 				duration: $('.form .duration select')[0].value,
 				urgency: $('.form .start select')[0].value
