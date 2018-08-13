@@ -84,3 +84,29 @@
         display: none;
     }
 }
+
+@media (max-width: 767px) {
+    .phones {
+        width: 320px;
+        height: 540px;
+        background-size: 320px 540px;
+        top: -270px;
+        left: calc(50% - 160px);
+    }
+
+    div.steepshot .right-circle {
+        display: none;
+    }
+
+    div.steepshot .top-circle {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: calc(50% - 80px);
+    }
+
+    .steepshot .circle {
+        top: 50px;
+        left: calc(50% - 80px);
+    }
+}

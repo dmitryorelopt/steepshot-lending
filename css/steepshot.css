@@ -24,11 +24,16 @@
     }
 
     .steepshot .title_block {
-        margin-top: 742px ;
+        margin-top: 742px;
     }
 
     .social-network {
         display: none;
     }
+}
 
+@media (max-width: 767px) {
+    .steepshot .title_block {
+        margin-top: 280px;
+    }
 }
