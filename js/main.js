@@ -6,7 +6,7 @@ const pages = [
 	'current_ditch',
 	'current_contact'
 ];
-const START_INDEX = 4;
+const START_INDEX = 0;
 let loading = false;
 let currentIndex = -1;
 let swapTime = 0;
