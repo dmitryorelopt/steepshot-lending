@@ -52,7 +52,11 @@
     width: 61px;
     height: 34px;
     font: 28px Didot;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 

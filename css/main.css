@@ -31,6 +31,9 @@
 
 @media (max-width: 1199px) {
     div.main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 100%;
     }
@@ -62,6 +65,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -71,7 +75,7 @@
     --header-height: 85px;
     --footer-height: 88px;
     --main-height: calc(100vh - var(--footer-height) - var(--header-height));
-    --main-min-height: 625px;
+    --main-min-height: 600px;
 }
 
 html {
@@ -81,9 +85,18 @@ html {
 body {
     position: relative;
     color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
     overflow-x: hidden;
@@ -92,8 +105,14 @@ body {
 .main {
     width: 100vw;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: var(--main-height);
     min-height: var(--main-min-height);
@@ -104,9 +123,17 @@ body {
     width: 100vw;
     min-width: 100vw;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: all var(--swap-time) linear;
+    -o-transition: all var(--swap-time) linear;
     transition: all var(--swap-time) linear;
     opacity: 0;
 }
@@ -137,6 +164,8 @@ body {
 .link {
     cursor: pointer;
     font: 14px OpenSans-Bold;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
@@ -149,9 +178,16 @@ body {
     height: 50px;
     border-radius: 500px;
     background-color: #0024ff;
+    -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font: 14px OpenSans-Extrabold;
     color: white;

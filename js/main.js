@@ -33,14 +33,13 @@ $window.ready(() => {
 		loading = true;
 
 		if (e.originalEvent.wheelDelta > 0) {
-			swapCurrentBlock(currentIndex - 1);
-		} else {
-			if (!scrollDown()) {
-				clearBlockAfter(300);
-				return;
+			if (scrollUp()) {
+				swapCurrentBlock(currentIndex - 1);
 			}
-
-			swapCurrentBlock(currentIndex + 1);
+		} else  {
+			if (scrollDown())  {
+				swapCurrentBlock(currentIndex + 1);
+			}
 		}
 
 		clearBlockAfter(swapTime);
@@ -152,9 +151,12 @@ function swapCurrentBlock(nextIndex) {
 	body.removeClass(pages[currentIndex]);
 	body.addClass(pages[nextIndex]);
 	currentIndex = nextIndex;
-	clearState();
-	$window.scrollTop(0);
 	lockScrollOnMilliseconds(swapTime);
+	clearState();
+}
+
+function scrollUp() {
+	return $window.scrollTop() === 0;
 }
 
 function scrollDown() {
@@ -171,6 +173,7 @@ function lockScrollOnMilliseconds(milliseconds) {
 	$('html').css('overflow-y', 'hidden');
 	setTimeout(() => {
 		$('html').css('overflow-y', 'auto');
+		$('html body').scrollTop(0);
 	}, milliseconds);
 }
 

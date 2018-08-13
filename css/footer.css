@@ -1,4 +1,6 @@
 footer {
+    -webkit-transition: all var(--swap-time) linear;
+    -o-transition: all var(--swap-time) linear;
     transition: all var(--swap-time) linear;
 }
 

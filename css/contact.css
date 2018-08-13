@@ -3,9 +3,15 @@
 }
 
 .contact label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 60px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font: 18px OpenSans-Regular;
     line-height: 3.33;
@@ -22,6 +28,18 @@
     font: 16px OpenSans-Regular;
     color: rgba(48, 47, 57, 0.3);
     line-height: 3.75;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder, .contact select::-webkit-input-placeholder {
+    opacity: 0.3 ;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder, .contact select:-ms-input-placeholder {
+    opacity: 0.3 ;
+}
+
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder, .contact select::-ms-input-placeholder {
+    opacity: 0.3 ;
 }
 
 .contact input::placeholder, .contact textarea::placeholder, .contact select::placeholder {
@@ -79,7 +97,11 @@
     display: none;
     width: 100%;
     height: 218px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font: 18px OpenSans-Regular;
     line-height: 3.33;
@@ -101,6 +123,8 @@
     }
 
     .back-to-top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
