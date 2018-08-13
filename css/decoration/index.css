@@ -90,3 +90,21 @@
     }
 
 }
+
+@media (max-width: 767px) {
+    .hello {
+        margin: 23px auto 0;
+        width: 267px;
+        font-size: 90px;
+        left: calc(50% - 133px);
+        top: 103px;
+    }
+
+    .double-comma {
+        top: 441px;
+    }
+
+    div.index .gray-dots {
+        top: 0;
+    }
+}

@@ -74,3 +74,28 @@
         margin: 52px auto 0;
     }
 }
+
+@media (max-width: 767px) {
+    .location {
+        display: none;
+    }
+
+    .title_index {
+        margin-top: 152px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.67;
+    }
+
+    .info_index {
+        width: 100%;
+        margin: 39px auto 0;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .index .btn {
+        margin: 39px auto 0;
+    }
+
+}
