@@ -1,0 +1,42 @@
+.navigation {
+    position: absolute;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 112;
+    top: calc(50% - 25px);
+}
+
+.navigation div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigation div:hover {
+    border: 1px solid white;
+}
+
+.left-btn {
+    float: left;
+    background: url('../assets/images/navigation/left.svg') no-repeat center;
+}
+
+.right-btn {
+    float: right;
+    background: url('../assets/images/navigation/rigth.svg') no-repeat center;
+}
+
+.current_index .left-btn {
+    display: none;
+}
+
+.current_contact .right-btn {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .navigation {
+        display: none;
+    }
+}

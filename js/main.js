@@ -75,6 +75,14 @@ $window.ready(() => {
 		window.open('https://github.com/Chainers/Ditch');
 	});
 
+	$('.left-btn').click(() => {
+		swapCurrentBlock(currentIndex - 1);
+	});
+
+	$('.right-btn').click(() => {
+		swapCurrentBlock(currentIndex + 1);
+	});
+
 	$('.contact .btn').click(() => {
 		$.ajax({
 			type: "POST",
