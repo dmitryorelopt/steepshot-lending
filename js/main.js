@@ -84,11 +84,9 @@ $window.ready(() => {
 				name: $('.form .name input')[0].value,
 				email: $('.form .email input')[0].value,
 				projet_name: $('.form .project-name input')[0].value,
-				description: $('.form .description-project input')[0].value
-					+ ' duration: '	+ $('.form .duration input')[0].value
-					+ ' urgency: ' + $('.form .start input')[0].value,
-				duration: 'w',
-				urgency: '1'
+				description: $('.form .description-project textarea')[0].value,
+				duration: $('.form .duration select')[0].value,
+				urgency: $('.form .start select')[0].value
 		}),
 			contentType: "application/json; charset=utf-8",
 			dataType: "json",
