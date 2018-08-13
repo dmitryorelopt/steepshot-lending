@@ -12,3 +12,9 @@
     left: calc(50% + 100px);
     top: calc(50% - 262px);
 }
+
+@media (max-width: 1199px) {
+    .contact .decoration {
+        display: none;
+    }
+}
