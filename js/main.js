@@ -77,6 +77,28 @@ $window.ready(() => {
 	});
 
 	$('.contact .btn').click(() => {
+		$.ajax({
+			type: "POST",
+			url: 'https://steepshot.io/api/v1/work-request',
+			data: JSON.stringify({
+				name: $('.form .name input')[0].value,
+				email: $('.form .email input')[0].value,
+				projet_name: $('.form .project-name input')[0].value,
+				description: $('.form .description-project input')[0].value
+					+ ' duration: '	+ $('.form .duration input')[0].value
+					+ ' urgency: ' + $('.form .start input')[0].value,
+				duration: 'w',
+				urgency: '1'
+		}),
+			contentType: "application/json; charset=utf-8",
+			dataType: "json",
+			success: function(data){
+				console.log(data)
+			},
+			failure: function(errMsg) {
+				console.log(errMsg);
+			}
+		});
 		$('.contact').addClass('show_message');
 	});
 

@@ -49,4 +49,16 @@
     .vim .left-circle {
         display: none;
     }
+
+    div.vim .circle {
+
+    }
+
+    div.vim .top-circle {
+        width: 200px;
+        height: 200px;
+        top: -60px;
+        left: calc(50% + 200px);
+
+    }
 }
