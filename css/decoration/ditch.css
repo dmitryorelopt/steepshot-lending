@@ -31,5 +31,42 @@
 .ditch .last-circle {
     top: calc(50% + 180px);
     left: calc(50% - 400px);
+}
 
+@media (max-width: 1199px) {
+
+    div.ditch .gray-dots,
+    div.ditch .right-circle,
+    div.ditch .bottom-circle,
+    div.ditch .last-circle {
+        display: none;
+    }
+
+
+    div.ditch .top-circle {
+        width: 200px;
+        height: 200px;
+        top: -90px;
+        left: calc(50% + 50px);
+        z-index: -1;
+    }
+
+    div.ditch .left-circle {
+        width: 100px;
+        height: 100px;
+        top: -23px;
+        left: calc(50% - 220px);
+    }
+
+    .ditch .circle {
+        top: -42px;
+        left: calc(50% - 684px);
+    }
+
+    div.ditch .background-ditch {
+        width: 600px;
+        height: 375px;
+        top: 70px;
+        left: calc(50% - 300px);
+    }
 }
