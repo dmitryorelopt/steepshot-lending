@@ -103,6 +103,18 @@
     .back-to-top {
         display: flex;
     }
+
+    .message {
+        font-size: 38px;
+    }
+
+    .message .title {
+        margin-top: 60px;
+    }
+
+    .message .message-for {
+        margin-top: 55px;
+    }
 }
 
 
@@ -119,4 +131,14 @@
     .back-to-top {
         height: 118px;
     }
+
+    .message {
+        font-size: 32px;
+    }
+
+
+    .message .message-for {
+        margin-top: 40px;
+    }
+
 }
