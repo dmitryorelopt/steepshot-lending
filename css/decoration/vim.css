@@ -24,15 +24,15 @@
 }
 
 .background-bottom {
-    background: url('../../assets/images/vim/background-bottom.png') no-repeat -55px -22px;
-    background-size: 710px 487px;
+    background: url('../../assets/images/vim/background-bottom.png') no-repeat;
+    background-size: 600px 375px;
     bottom: calc(50% - 80px);
     left: 50%;
 }
 
 .background-top {
-    background: url('../../assets/images/vim/background-top.png') no-repeat -55px -22px;
-    background-size: 710px 487px;
+    background: url('../../assets/images/vim/background-top.png') no-repeat;
+    background-size: 600px 375px;
     bottom: calc(50% - 265px);
     left: calc(50% - 220px);
 }
@@ -51,7 +51,10 @@
     }
 
     div.vim .circle {
-
+        width: 608px;
+        height: 608px;
+        left: 50%;
+        top: calc(50% - 390px);
     }
 
     div.vim .top-circle {
@@ -60,5 +63,24 @@
         top: -60px;
         left: calc(50% + 200px);
 
+    }
+
+    div.vim .bottom-circle {
+        width: 140px;
+        height: 140px;
+        top: calc(50% + 220px);
+        left: calc(50% - 340px);
+    }
+
+    .background-bottom {
+        top: 100px;
+        left: calc(50% - 150px);
+        background-size: 500px 312px;
+    }
+
+    .background-top {
+        top: 400px;
+        left: calc(50% - 354px);
+        background-size: 500px 312px;
     }
 }
