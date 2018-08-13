@@ -26,3 +26,14 @@
         margin-top: 772px;
     }
 }
+
+@media (max-width: 767px) {
+
+    div.main .vim {
+        height: 285px;
+    }
+
+    .vim .title_block {
+        margin-top: 16px;
+    }
+}

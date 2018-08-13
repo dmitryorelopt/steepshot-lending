@@ -109,4 +109,12 @@
         top: 50px;
         left: calc(50% - 80px);
     }
+
+    div.steepshot .bottom-circle {
+        width: 140px;
+        height: 140px;
+        top: calc(50% + 100px);
+        left: calc(50% - 100px);
+
+    }
 }

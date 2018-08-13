@@ -84,3 +84,17 @@
         background-size: 500px 312px;
     }
 }
+
+@media (max-width: 767px) {
+    .background-bottom {
+        top: calc(-171px - 125px);
+        left: calc(50% - 60px);
+        background-size: 199px 125px;
+    }
+
+    .background-top {
+        top: calc(-171px - 6px);
+        left: calc(50% - 140px);
+        background-size: 199px 125px;
+    }
+}
