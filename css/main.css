@@ -23,6 +23,10 @@
     div div.description_block {
         width: 100%;
     }
+
+    div div .btn {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1199px) {

@@ -15,3 +15,13 @@
         margin-top: 505px;
     }
 }
+
+@media (max-width: 767px) {
+    .ditch {
+        padding-bottom: 50px;
+    }
+
+    .ditch .title_block {
+        margin-top: 422px;
+    }
+}

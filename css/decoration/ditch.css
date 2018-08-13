@@ -70,3 +70,12 @@
         left: calc(50% - 300px);
     }
 }
+
+@media (max-width: 767px) {
+    div.ditch .background-ditch {
+        width: 320px;
+        height: 250px;
+        top: 100px;
+        left: calc(50% - 160px);
+    }
+}

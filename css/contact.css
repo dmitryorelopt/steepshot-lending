@@ -104,3 +104,19 @@
         display: flex;
     }
 }
+
+
+@media (max-width: 767px) {
+    .contact .col-3 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact label span {
+        display: none;
+    }
+
+    .back-to-top {
+        height: 118px;
+    }
+}
