@@ -83,6 +83,17 @@ $window.ready(() => {
 		swapCurrentBlock(currentIndex + 1);
 	});
 
+	const RIGHT_KEY_CODE = 39;
+	const LEFT_KEY_CODE = 37;
+	$('body').keydown((e) => {
+		if (e.keyCode === RIGHT_KEY_CODE) {
+			swapCurrentBlock(currentIndex + 1);
+		}
+		if (e.keyCode === LEFT_KEY_CODE) {
+			swapCurrentBlock(currentIndex - 1);
+		}
+	});
+
 	$('.contact .btn').click(() => {
 		$.ajax({
 			type: "POST",
