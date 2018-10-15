@@ -38,6 +38,13 @@
     margin-top: 22px;
 }
 
+.desc_index {
+    margin-top: 29px;
+    font: 18px OpenSans-Light;
+    line-height: 1.67;
+    color: #302f39;
+}
+
 @media (max-width: 1199px) {
 
     .main .index {
